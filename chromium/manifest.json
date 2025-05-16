@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "NRMT",
+    "version": "3.4.1",
+    "description": "old.reddit masstagger.",
+    "homepage_url": "https://github.com/Mothrakk",
+
+    "action": {
+        "default_icon": {
+            "16": "popup/icon.png"
+        },
+        "default_title": "NRMT",
+        "default_popup": "popup/popup.html"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://old.reddit.com/*"],
+            "js": ["main.js"]
+        }
+    ],
+
+    "permissions": ["storage"]
+}
